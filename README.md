@@ -20,6 +20,10 @@ Unreal Engine 5.7 on Windows (the version it is developed and tested with).
 Building from source also needs Visual Studio 2022 with the *Game development
 with C++* workload.
 
+On the ROS side: ROS 2 Jazzy (Ubuntu 24.04), with GNC Moon Simulator's
+`component_stereo_depth` node receiving the stream. The plugin itself has no ROS
+dependency: any program that reads the [wire format](docs/wire-format.md) can use it.
+
 ## Install
 
 - **Prebuilt (UE 5.7, Win64):** download `UnrealStereoCam-<version>-UE5.7-Win64.zip`
