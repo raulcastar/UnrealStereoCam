@@ -7,12 +7,13 @@ extra cameras) to ROS over TCP, without stalling the game thread.
 
 ![Central camera, ground-truth depth and object mask](docs/images/ground_truth.png)
 
-*The rover driving on the Moon in GNC Moon Simulator. Top: the left and right
+*The rover driving on the Moon in MARE. Top: the left and right
 navcams and the depth GNC computes from them. Bottom: the central camera, the
 ground-truth depth and the object mask.*
 
-Part of [GNC Moon Simulator](https://github.com/raulcastar/GNC-Moon-Simulator):
-its `component_stereo_depth` node receives the frames on port 3004.
+Part of [MARE](https://github.com/raulcastar/MARE-Lunar-Simulator), an open-source lunar rover
+simulation suite. In its ROS 2 stack,
+[GNC-Moon-Simulator](https://github.com/raulcastar/GNC-Moon-Simulator), the `component_stereo_depth` node receives the frames on port 3004.
 
 ## Requirements
 
@@ -20,8 +21,8 @@ Unreal Engine 5.7 on Windows (the version it is developed and tested with).
 Building from source also needs Visual Studio 2022 with the *Game development
 with C++* workload.
 
-On the ROS side: ROS 2 Jazzy (Ubuntu 24.04), with GNC Moon Simulator's
-`component_stereo_depth` node receiving the stream. The plugin itself has no ROS
+On the ROS side: ROS 2 Jazzy (Ubuntu 24.04), with the
+`component_stereo_depth` node of GNC-Moon-Simulator receiving the stream. The plugin itself has no ROS
 dependency: any program that reads the [wire format](docs/wire-format.md) can use it.
 
 ## Install
